@@ -2,6 +2,10 @@
 
 ### A Front End web app for hotels reservations using Vue.js Framework and Vite as a build tool.
 
+## Demo Preview
+
+[Link to the demo](https://elkanaria-hotels-booking.netlify.app/)
+
 ## project setup
 
 - You can run `npm install` to setup the project

@@ -22,6 +22,7 @@
   > Thank you for booking with us.
 - [x] if the user wants to book another hotel a **welcome message** will display to confirm the booking and then a **thanks message** will display again.
 - [x] the web provides **cart functionality** so the user can **_see_** all his bookings and **_cancel_** the booking he wants.
+- [x] the app saves the user name and booking list in the browser so it wouldn't be lost when refreshing the page.
 
 ## Used languages and tools
 

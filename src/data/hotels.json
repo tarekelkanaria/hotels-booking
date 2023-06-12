@@ -1,0 +1,40 @@
+{
+  "hotels": [
+    {
+      "id": "h1",
+      "name": "Tolip Hotel",
+      "address": "Alexandria, 116 main street",
+      "rating": 4.3
+    },
+    {
+      "id": "h2",
+      "name": "Four Seasons resort",
+      "address": "Sharm el sheikh, 20 main street",
+      "rating": 5
+    },
+    {
+      "id": "h3",
+      "name": "Sheraton sharm hotel",
+      "address": "Sharm Al Shiekh, South Sinai 85 main street",
+      "rating": 4
+    },
+    {
+      "id": "h4",
+      "name": "Royal Crown",
+      "address": "Alexandria, 150 main street",
+      "rating": 2.9
+    },
+    {
+      "id": "h5",
+      "name": "Amoun Hotel",
+      "address": "Alexandria, 40 main street",
+      "rating": 3.9
+    },
+    {
+      "id": "h6",
+      "name": "Sunrise Hotel",
+      "address": "Alexandria, 14 main street",
+      "rating": 1.9
+    }
+  ]
+}

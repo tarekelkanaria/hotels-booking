@@ -1,0 +1,41 @@
+@import './placeholders';
+@import './mixins';
+@import './variables';
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+html {
+  font-size: 62.5%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+  background-color: $mainBackground;
+}
+.container {
+  width: 94%;
+  margin: 0 auto;
+  @include media-query($smScreen) {
+    & {
+      width: 100%;
+    }
+  }
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.svg-star {
+  svg {
+    fill: #facc15;
+  }
+}

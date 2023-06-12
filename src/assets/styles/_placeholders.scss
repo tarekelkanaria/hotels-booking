@@ -1,0 +1,107 @@
+@use './mixins' as *;
+@use './variables' as *;
+
+%flex_between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+%flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+%main_title {
+  text-align: center;
+  font: {
+    size: 2.8rem;
+    family: $headingFont;
+    weight: bold;
+  }
+  letter-spacing: -0.1rem;
+  padding: 0;
+  color: $headingColor;
+  margin-bottom: 1rem;
+}
+%main_list {
+  @extend %flex_center;
+  gap: 1rem;
+  padding: 0;
+  flex-wrap: wrap;
+}
+%modal_window {
+  width: 50%;
+  max-width: 60rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  background-color: $whiteColor;
+  text-align: center;
+  border-radius: 0.8rem;
+  @include media-query($mdScreen) {
+    & {
+      width: 95%;
+      max-width: unset;
+      margin-inline: auto;
+      padding: 0.5rem;
+      left: 49%;
+    }
+  }
+  @include media-query($smScreen) {
+    & {
+      left: 48%;
+    }
+  }
+  .close-modal {
+    width: 4.8rem;
+    height: 4.8rem;
+    background-color: rgba(#fff7ed, 0.6);
+    position: absolute;
+    top: -5.3rem;
+    right: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.47, 0, 0.745, 0.715);
+    &:hover {
+      background-color: #fff7ed;
+    }
+  }
+}
+%modal_message {
+  h2 {
+    color: $secondaryColor;
+    padding: 2rem;
+    font-weight: bold;
+    font-size: 2rem;
+    span {
+      color: $subHeadingColor;
+    }
+  }
+}
+%input_wrapper {
+  width: 70%;
+  margin: 1rem auto 0;
+  @extend %flex_center;
+  @include media-query($smScreen) {
+    & {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+}
+%cancel_btn {
+  background-color: transparent;
+  color: $subHeadingColor;
+  margin-left: 2rem;
+  @include media-query($smScreen) {
+    & {
+      margin-left: unset;
+    }
+  }
+  &:hover {
+    background-color: $buttonBackground;
+    color: $textLightColor;
+  }
+}
